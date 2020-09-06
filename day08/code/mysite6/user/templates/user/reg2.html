@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册２</title>
+</head>
+<body>
+<form action="/user/reg2" method="post">
+    {% csrf_token %}
+{#        <div>#}
+{#            <label for="">用户名：</label>#}
+{#            <input type="text" name="username" value="{{ username }}">#}
+{#            <span>{{ username_error }}</span>#}
+{#        </div>#}
+{#        <div>#}
+{#            <label for="">密码：</label>#}
+{#            <input type="text" name="password" value="{{ password1 }}">#}
+{#            <span>{{ password_error }}</span>#}
+{#        </div>#}
+{#        <div>#}
+{#            <label for="">密码(重复):</label>#}
+{#            <input type="text" name="password2" value="{{ password2 }}">#}
+{#            <span>{{ password2_error }}</span>#}
+{#        </div>#}
+{#        <div>#}
+{#            年龄:<input type="text" name="age">#}
+{#        </div>#}
+{#        <div>#}
+{#            <input type="submit" value="注册">#}
+{#        </div>#}
+    {{ myform1.as_p }}
+    <input type="submit" value="注册">
+</form>
+</body>
+</html>
